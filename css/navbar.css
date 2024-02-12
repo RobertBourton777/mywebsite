@@ -1,3 +1,5 @@
+
+/* Document Reset */
 * {
     box-sizing: border-box;
 }
@@ -8,6 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+
+
+/* Navbar CSS */
 
 .brand-title {
     display: flex;
@@ -26,14 +32,16 @@ body {
     color: black;
 }
 
-
+#navbar-4 .brand-title a {
+    color: white;
+}
 
 
 .navbar {
     display: flex;
-    position: fixed;
+   /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0;*/
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +51,10 @@ body {
     z-index: 100000;
 }
 
-
+/* JS adds the sticky class when scrolling for the first navbar */
 .navbar.sticky {
 	background: white;
 }
-
-
 
 .navbar-links {
     height: 100%;
@@ -79,11 +85,16 @@ body {
     padding: 1rem;
 }
 
+#navbar-3 .navbar-links a, #navbar-4 .navbar-links a {
+    color: white;
+} 
+
 .navbar-links li:hover {
     background-color: #EFECEB;
 }
 
-#navbar-4 .navbar-links li:hover, #navbar-3 .navbar-links li:hover {
+
+#navbar-4 .navbar-links li:hover, #navbar-3 .navbar-links li:hover, .popover-tabs li:hover {
     background-color: #FEC4B0;
 }
 
@@ -106,30 +117,23 @@ body {
     border-radius: 10px;
 }
 
+
 #navbar-2 {
-    position: relative;
+    /*position: relative;
     top: 50px;
-    right: 0;
+    right: 0;*/
     background-color: gray;
 
 }
 
-#navbar-3 {
-    position: relative;
+#navbar-3, #navbar-4 {
+    /*position: relative;
     top: 65px;
-    right: 0;
+    right: 0;*/
     background-color: #EA948A;
     flex-direction: row-reverse;
-
 }
 
-#navbar-4 {
-    position: relative;
-    top: 90px;
-    right: 0;
-    background-color: #EA948A;
-    
-}
 
 /* Popover, two ways of doing it.  tab1 and tab3 are only text, as tab2 is a popover with HTML as it can have links  */
 
@@ -137,27 +141,26 @@ body {
     display: none;
     position: absolute;
     left: 0px;
-    top: 83px;
+    top: 401px;
     background-color: #EA948A;
     padding: 1.5rem;
     width: 100vw;
     color: white;
 }
 
-.tab2:hover .popover {
+.popover-tabs li:nth-child(2):hover .popover {
     z-index: 10;
     display: block;
 }
-/* tab2 and popover go together  */
 
-/* I made these ones */
 
-.tab1:hover::after {
-    content: 'This is a message';
+
+.popover-tabs li:nth-child(1):hover::after {
+    content: 'This popover can be anywhere on the screen.  Fixed to top/bottom of screen or like this.';
     display: block;
     position: absolute;
     left: 0;
-    top: 83px;
+    top: 401px;
     background-color: #EA948A;
     padding: 1.5rem;
     width: 100vw;
@@ -165,12 +168,12 @@ body {
     z-index: 5;
 }
 
-.tab3:hover::after {
-    content: 'This is a message';
+.popover-tabs li:nth-child(3):hover::after {
+    content: 'Some can even have links, check Tab 2 out for that kind.';
     display: block;
     position: absolute;
     left: 0;
-    top: 83px;
+    top: 401px;
     background-color: #EA948A;
     padding: 1.5rem;
     width: 100vw;
@@ -179,55 +182,68 @@ body {
 }
 
 
-/* popover message ends here */
 
-
-
-
-.nav-group .navbar-links li:hover {
-    background-color: #FDCEC8;
-}
-
-
-
-
-.div-2 {
-    position: absolute;
-    top: 247px;
-}
-
-.nav-group {
+#navbar-4 div:first-child {
     display: flex;
     justify-content: space-between;
 }
 
-.tab {
+.popover-tabs {
     z-index: 5;
 }
-.tab ul {
+.popover-tabs ul {
     display: flex;
-  flex-direction: row;
+    flex-direction: row;
 }
 
-.tab li a {
-   
+
+#navbar-4 li {
+    list-style: none;
+}
+
+
+.popover-tabs li a {
     margin: 0 15px;
     display: block;
     text-decoration: none;
     color: black;
     letter-spacing: 2px;
     font-weight: 500px;
-    
+    color: white;   
 }
 
-nav#navbar-4 .navbar-link ul li a:hover, #navbar-4 .tab li a:hover {
-    background-color: #FDCEC8;
+
+
+
+
+
+
+
+
+
+
+
+
+/* by att */
+
+[id^=navbar] {
+    margin-top: 45px;
 }
 
-.tab li {
-    list-style: none;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
 
 
 /* Only for the first navbar */
@@ -263,7 +279,7 @@ nav#navbar-4 .navbar-link ul li a:hover, #navbar-4 .tab li a:hover {
         display: flex;
     }
 
-   
+
 }
 
 
