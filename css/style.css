@@ -262,7 +262,6 @@ hr {
 
 
 .show-off .projects div {
-    width: 200px;
     height: 200px;
 
 }
@@ -276,6 +275,9 @@ hr {
 
 
 @media (max-width: 800px) {
+    .brand-title {
+        font-size:  0.75rem;;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -305,6 +307,14 @@ hr {
 
     .navbar-links.active {
         display: flex;
+    }
+
+    .main h1 {
+        font-size: 1rem;
+    }
+
+    .main h4 {
+        font-size: 0.75rem;
     }
 
     .icons {
