@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbars</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d8417238bb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/navbar.css">
+	<script src="js/navbar.js" defer></script>
+</head>
+<body>
+
+	<nav class="navbar">
+        <div class="brand-title"><a href="">Brandname</a></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#info">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      
+      
+  <nav class="navbar" id="navbar-2">
+    <div class="brand-title"><a href="">Brandname</a></div>
+    <div class="navbar-links" style="display: block;">
+      <ul>
+        <li><a href="#info">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+   <nav class="navbar" id="navbar-3">
+      <div class="brand-title"><a href="" style="color: white;">Logo</a></div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#" style="color: white;">Home</a></li>
+            <li><a href="#" style="color: white;">About</a></li>
+            <li><a href="#" style="color: white;">Contact</a></li>
+          </ul>  
+        </div>
+  </nav>
+
+  <nav id="navbar-4">
+    <div class="nav-group">
+      <div class="brand-title"><a href="" style="color: white;">Logo</a></div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#" style="color: white;">Home</a></li>
+          <li><a href="#" style="color: white;">About</a></li>
+          <li><a href="#" style="color: white;">Contact</a></li>
+        </ul>  
+      </div>  
+    </div>
+      
+    <div class="tab">
+      <ul>
+        <li class="tab1"><a href="#" style="color: white;">Tab 1</a></li>
+        <li class="tab2"><a href="#" style="color: white;">Tab 2</a>
+          <div class="popover">
+            <p>This link leads to another HTML page.</p>
+            <a href="tab2.html" style="color: white;">Click Here</a>
+          </div>
+        </li>
+        <li class="tab3"><a href="#" style="color: white;">Tab 3</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+
+
+      <div class="body-area">
+        <div class="div-1">
+          <p>Top navbar is fixed and has a hamburger menu, second one does not have a menu.  </p>
+          <p>Hamburger button is 3 horizontal line when viewed on a small screen <i class="fa-solid fa-bars"></i>, its named because of this <i class="fa-solid fa-burger"></i></p>  
+          <p>This navbar below, is in revers.  Logo is to the right.  The logo can also be in the <a href="#" onclick="switchTo_center()">center</a>.  No menu. <a href="#" onclick="switch_back()">reset</a></p>
+        </div>
+
+        <div class="div-2">
+          <p>This navbar</p>
+
+        </div>
+      </div>
+
+</body>
+</html>
