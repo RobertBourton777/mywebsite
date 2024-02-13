@@ -1,0 +1,30 @@
+:root {
+	--button-width: 100px;
+	--button-height: 50px;
+	--button-background: #CAA1F0;
+	--button-color: white;
+}
+
+.button {
+	width: var(--button-width);
+	height: var(--button-height);
+	color: var(--button-color);
+/*	background: var(--button-background);*/
+
+background: rgb(191,132,233);
+background: linear-gradient(90deg, rgba(191,132,233,1) 4%, rgba(80,17,131,1) 52%, rgba(202,155,222,1) 99%);
+border: none;
+text-align: center;
+line-height: calc(var(--button-width)/2);
+border-radius: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
+padding: 0.188rem;
+transition: background 500ms ease-in;
+}
+
+.button:hover {
+	background: rgb(220,177,233);
+	background: linear-gradient(90deg, rgba(220,177,233,1) 1%, rgba(222,168,226,1) 28%, rgba(246,167,252,1) 99%);
+	cursor: pointer;
+}

@@ -1,7 +1,11 @@
 
+
+
 /* Document Reset */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -213,6 +217,65 @@ body {
 }
 
 
+img.logo {
+    width: 45px;
+    height: 45px;
+    transition: all 1s ease 0.5s;
+}
+
+img.logo:hover {
+    transform: rotate(25deg);
+    width: 55px;
+
+}
+
+.navbar-5 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #edf0f1;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button.contact-button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button.contact-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
 
 
 
