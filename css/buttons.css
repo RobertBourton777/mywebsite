@@ -1,16 +1,10 @@
 :root {
 	--button-width: 100px;
 	--button-height: 50px;
-	--button-background: #CAA1F0;
 	--button-color: white;
 }
 
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
 .button {
 	width: var(--button-width);
@@ -26,10 +20,6 @@
 	font-weight: 400;
 	padding: 0.188rem;
 	transition: all 200ms ease-in 500ms;
-}
-
-body {
-	background: blue;
 }
 
 

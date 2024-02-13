@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.ms-15 {
+	margin-left: 15px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.me-15 {
+	margin-right: 15px;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.m-15 {
+	margin: 15px;
+}
+
+
+
+.ms-45 {
+	margin-left: 45px;
+}
+
+.mt-45 {
+	margin-top: 45px;
+}
+
+.me-45 {
+	margin-right: 45px;
+}
+
+.mb-45 {
+	margin-bottom: 45px;
+}
+
+.m-45 {
+	margin: 45px;
+}
+
+
+
+.ms-90 {
+	margin-left: 90px;
+}
+
+.mt-90 {
+	margin-top: 90px;
+}
+
+.me-90 {
+	margin-right: 90px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.m-90 {
+	margin: 90px;
+}
+
+
+.ps-5 {
+	padding-left: 5px;
+}
+
+.pt-5 {
+	padding-top: 5px;
+}
+
+.pe-5 {
+	padding-right: 5px;
+}
+
+.pb-5 {
+	padding-bottom: 5px;
+}
+
+.p-5 {
+	padding: 5px;
+}
+
+.text-blue {
+	color: blue;
+}
+
+.text-red {
+	color: red;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-green {
+	color: green;
+}
+
+.text-yellow {
+	color: yellow;
+}
+
+
