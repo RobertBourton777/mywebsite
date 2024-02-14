@@ -1,0 +1,17 @@
+$color: #333;
+
+body {
+	color: $color;
+}
+
+nav {
+	ul {
+		margin: 0;
+	}
+	li {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+	}
+}
